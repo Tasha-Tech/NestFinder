@@ -1,10 +1,11 @@
 import geopandas as gpd
 import utils
-
+import pathlib
 
 def load(path: str):
     # Files cloned from https://github.com/NewtonMAGIS/GISData.git
-    schools = gpd.read_file(f'{path}/schools.geojson')
+    f = pathlib.Path(f'{path}/schools.geojson').resolve()
+    schools = gpd.read_file(f)
     print('Available columns', list(schools.columns))
 
     # Project only relevant columns
@@ -20,6 +21,10 @@ def web_load(path: str):
         outfile.write(data)
 
 
-if __name__ == "__main__":
+def test():
     # web_load('downloads')
     s = load('downloads')
+
+
+if __name__ == "__main__":
+    test()
