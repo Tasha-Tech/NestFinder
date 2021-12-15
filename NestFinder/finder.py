@@ -34,9 +34,9 @@ class Finder:
 
         # Create an in-memory SQLite database.
         self.sql_engine = create_engine('sqlite://', echo=False)
-        sql_columns = ['address', 'listPrice', 'lotSize', 'yearBuilt']
-        [sql_columns.append(col + '_school') for col in s['TYPE'].unique()]
-        houses[sql_columns].to_sql('on_sale', con=self.sql_engine)
+        self.columns = ['address', 'listPrice', 'yearBuilt', 'lotSize', 'sqftTotal', 'bath', 'bed', 'propertyType', 'zipCode']
+        [self.columns.append(col + '_school') for col in s['TYPE'].unique()]
+        houses[self.columns].to_sql('on_sale', con=self.sql_engine)
 
     def submit(self, stmt: str):
         return self.sql_engine.execute(stmt).fetchall()
@@ -47,6 +47,10 @@ finder = Finder()
 
 def submit(stmt: str):
     return finder.submit(stmt)
+
+
+def columns():
+    return finder.columns
 
 
 if __name__ == "__main__":

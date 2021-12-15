@@ -1,8 +1,24 @@
 # Nest Finder
 ## Introduction
-I am NTIA student standing Python and Data Analytics
+Hi!
 
-This project intended to demonstrate my working skills with Pandas, SQl, Web crawling, etc.
+I am an NTIA student and this is my Python and Data Analytics project.
+
+In this project I will demonstrate how to combine data from Real Estate Websites
+with data available on Public Domain such as GIS data from City of Newton MA
+
+This project can be cloned form:
+https://github.com/Tasha-Tech/NestFinder.git
+
+This project has several modules:
+
+**adress**   # Property information from Newton City GIS data 
+
+**schools**  # School information from Newton City GIS data
+
+**on_sale**  # Houses on Sale information from www.movoto.com
+
+**finder**   # Finder module "combines" information from modules above and populates SQL database
 
 ## Dependencies
 geopandas
@@ -12,11 +28,4 @@ requests
 beautifulsoup4
 
 sqlalchemy
-
-
-## Binder link
-https://hub.gke2.mybinder.org/user/tasha-tech-nestfinder-eaykzfl4/lab/tree/NestFinder
-
-## Rebuild binder with
-https://mybinder.org/v2/gh/Tasha-Tech/NestFinder/832686997078c8d3ffb1e6f1892987b68ce0008c?urlpath=lab%2Ftree%2FNestFinder%2FTutorial.ipynb
 
