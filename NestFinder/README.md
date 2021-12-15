@@ -1,3 +1,4 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Tasha-Tech/NestFinder.git/main?labpath=%2FNestFinder%2FTutorial.ipynb)
 # Nest Finder
 ## Introduction
 Hi!
@@ -28,4 +29,10 @@ requests
 beautifulsoup4
 
 sqlalchemy
+
+## Binder link
+https://mybinder.org/v2/gh/Tasha-Tech/NestFinder.git/main?labpath=%2FNestFinder%2FTutorial.ipynb
+
+## Binder badge
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Tasha-Tech/NestFinder.git/main?labpath=%2FNestFinder%2FTutorial.ipynb)
 
