@@ -17,6 +17,6 @@ sqlalchemy
 ## Binder link
 https://mybinder.org/v2/gh/Tasha-Tech/NestFinder.git/main?labpath=%2FNestFinder%2FTutorial.ipynb
 
-## Bimder badge
+## Binder badge
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Tasha-Tech/NestFinder.git/main?labpath=%2FNestFinder%2FTutorial.ipynb)
 
