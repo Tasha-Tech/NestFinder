@@ -1,10 +1,13 @@
-from bs4 import BeautifulSoup
 import requests
 import json
 import pandas as pd
 import geopandas
 from typing import Union
 
+'''
+# mybinder.org has a problem with BeautifulSoup
+
+from bs4 import BeautifulSoup
 
 def download_url(url):
     agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 ' \
@@ -37,7 +40,7 @@ def web_load(path: str):
             json.dump(data, outfile)
 
         counter += 1
-
+'''
 
 def from_disk(path: str) -> geopandas.geodataframe.GeoDataFrame:
     data = None
