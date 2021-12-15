@@ -9,9 +9,10 @@ import on_sale
 def meters_to_miles(meters):
     return meters * 0.000621371
 
+
 if __name__ == "__main__":
-    schools = schools.load()
-    # a = address.load()
+    schools = schools.load('downloads')
+    # a = address.load('downloads')
 
     #  https://www.w3.org/2015/spatial/wiki/Coordinate_Reference_Systems
     #  Distance may be invalid for a geographic CRS using degrees as units
